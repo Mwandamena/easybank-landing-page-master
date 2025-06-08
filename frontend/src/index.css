@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+/* font import */
+@font-face {
+  font-family: Public;
+  src: url(./assets/font/PublicSans-VariableFont_wght.ttf);
+}
+
+/* ROOT STYLES */
+
+:root {
+  /* breakpoints */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /* COLORS */
+  /* primary */
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+
+  /* neutral */
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* TYPOGRAPHY */
+  --body-copy: 18px;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --public-sans: Public, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body styles and presets */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: var(--body-copy);
+  font-family: var(--public-sans);
+  color: var(--grayish-blue);
+}
+
+/* btn gradient styles */
+.cta {
+  background-image: linear-gradient(
+    90deg,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+}
+
+/* hero styles */
+.hero {
+  background-image: url(./assets/images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left 34rem top -19rem, left;
+}
+
+/* navbar link styles */
+.navlink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -24px;
+  height: 0.3rem;
+  opacity: 0;
+  width: 100%;
+  background: linear-gradient(var(--bright-cyan), var(--lime-green));
+  transition: all ease-in 0.3s;
+}
+
+.navlink:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(./assets/images/bg-intro-mobile.svg);
+    background-position: left -4rem top 0rem, right;
+    background-size: 135%;
+  }
+}
