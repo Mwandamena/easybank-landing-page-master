@@ -7,6 +7,16 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+// images
+import ob from "../assets/images/icon-online.svg"; // online banking
+import sb from "../assets/images/icon-budgeting.svg"; // simple budgeting
+import fo from "../assets/images/icon-onboarding.svg"; // fast onboarding
+import api from "../assets/images/icon-api.svg"; // open API
+import blog1 from "../assets/images/image-currency.jpg"; // blog image 1
+import blog2 from "../assets/images/image-restaurant.jpg"; // blog image 2
+import blog3 from "../assets/images/image-plane.jpg"; // blog image 3
+import blog4 from "../assets/images/image-confetti.jpg"; // blog image 4
+
 // all the constants for the website
 
 const navLinks = [
@@ -41,28 +51,28 @@ const services = [
   {
     id: 0,
     title: "Online Banking",
-    img: "/src/assets/images/icon-online.svg",
+    img: ob,
     description:
       "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
   },
   {
     id: 1,
     title: "Simple Budgeting",
-    img: "/src/assets/images/icon-budgeting.svg",
+    img: sb,
     description:
       "See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.",
   },
   {
     id: 2,
     title: "Fast Onboarding",
-    img: "/src/assets/images/icon-onboarding.svg",
+    img: fo,
     description:
       "We don’t do branches. Open your account in minutes online and start taking control of your finances right away.",
   },
   {
     id: 3,
     title: "Open API",
-    img: "/src/assets/images/icon-api.svg",
+    img: api,
     description:
       "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
   },
@@ -71,7 +81,7 @@ const services = [
 const blogs = [
   {
     id: 0,
-    img: "/src/assets/images/image-currency.jpg",
+    img: blog1,
     author: "By Claire Robinson",
     title: "Receive money in any currency with no fees",
     description:
@@ -79,7 +89,7 @@ const blogs = [
   },
   {
     id: 1,
-    img: "/src/assets/images/image-restaurant.jpg",
+    img: blog2,
     author: "By Wilson Hutton",
     title: "Treat yourself without worrying about money",
     description:
@@ -87,7 +97,7 @@ const blogs = [
   },
   {
     id: 2,
-    img: "/src/assets/images/image-plane.jpg",
+    img: blog3,
     author: "By Wilson Hutton",
     title: "Take your Easybank card wherever you go",
     description:
@@ -95,7 +105,7 @@ const blogs = [
   },
   {
     id: 3,
-    img: "/src/assets/images/image-confetti.jpg",
+    img: blog4,
     author: "By Claire Robinson",
     title: "Our invite-only Beta accounts are now live!",
     description:
